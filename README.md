@@ -1,9 +1,12 @@
 # Amazon_Vine_Analysis
+
 # Overview of the analysis: Explain the purpose of this analysis.
+
 Use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Using Pandas determine if there is any bias towards reviews that were written as part of the Vine program. For this analysis, you'll determine if having a paid Vine review makes a difference in the percentage of 5-star reviews.
 
 # Results
 # How many Vine reviews and non-Vine reviews were there?
+  
   Through filtering the data we were able to retrieve all the rows that include a review that was written as part of a Vine program. There were a total of 94 Vine reviews. 
 
 <img width="432" alt="Screen Shot 2023-03-22 at 5 46 58 PM" src="https://user-images.githubusercontent.com/117120227/227070441-45c0e209-83f4-4489-bb6e-259b7ffa9fc2.png">
@@ -24,6 +27,5 @@ Use PySpark to perform the ETL process to extract the dataset, transform the dat
   <img width="407" alt="Screen Shot 2023-03-22 at 5 52 28 PM" src="https://user-images.githubusercontent.com/117120227/227071104-610319b0-8a85-468b-9227-b1c65d88235e.png">
   <img width="350" alt="Screen Shot 2023-03-22 at 5 52 54 PM" src="https://user-images.githubusercontent.com/117120227/227071151-4e22ec31-9084-4c6d-85aa-2dddd04560d6.png">
 
-
-
-Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+# Summary: 
+Out of the 5 stars reviews there were about 51% belonging to the Vine program which appears to be a positive bias for reviews in the Vine program. Contrary the percentage in the non-Vine reviews is only 39%, One additional analysis we could use to support this statement is by runninng a statistical distribution of the each star rating for the Vine versus non-Vine reviews.
